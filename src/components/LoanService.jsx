@@ -1,6 +1,6 @@
 
 // Konstanter för att sätta fasta permanenta värden för APIets azure-url samt dess API-nyckel
-const BASE_URL = "loans-api-bye8b4fgaufucma9.norwayeast-01.azurewebsites.net";
+const BASE_URL = "https://loans-api-bye8b4fgaufucma9.norwayeast-01.azurewebsites.net/api";
 const API_KEY = "key1234";
 
 
@@ -13,24 +13,9 @@ export async function getLoans() {    // Hämtar alla lån inför att visa dem i
   });
 
   if (!response.ok) {
-    throw new Error("Kunde inte hämta lån, vänligen försök igen.");
+    alert("Kunde inte hämta lån, vänligen försök igen.");
   }
 
   return response.json(); // Returnerar det hämtade svaret i JSON-format
 }
 
-/* Hämtar ett specifikt lån via ID
-export async function getLoanById(id) {
-  const response = await fetch(`${BASE_URL}/loans/${id}`, {
-    headers: {
-      "API-Key": API_KEY,
-    },
-  });
-
-  if (!response.ok) {
-    throw new Error("Kunde inte hämta lånet");
-  }
-
-  return response.json();
-}
-*/

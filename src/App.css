@@ -181,4 +181,25 @@
     right: 0;
     border-right-color: var(--border);
   }
+
+  .big-btn {
+    display: block;
+    margin: 0 auto 24px;
+    padding: 12px 24px;
+    font-size: 18px;
+    border-radius: 6px;
+    background: var(--accent);
+    color: var(--accent-text);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: var(--accent-hover);
+    }
+    &:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+    }
+  }
 }
