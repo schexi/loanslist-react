@@ -2,7 +2,7 @@ HV Bibliotek — Lånelista
 
 En Single Page Application (SPA) byggd med React och Vite som hämtar och visar alla lån från Loans API om jag skapat till att även interagera med våran t4bibliotek app på azure. Applikationen visar låntagare, objekt-ID, datum och status (aktiv/återlämnad) för varje lån i en lista med lånekort. Listan hämtas automatiskt vid start och kan uppdateras manuellt via en knapp.
 
-**Hur man lkör applikatoonen:
+**Hur man lkör applikationen:**
 
 Du behöver:
 - Node.js installerat
