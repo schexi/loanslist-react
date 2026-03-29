@@ -8,7 +8,7 @@ function App() {
 
     function handleRefresh() {
     setRefreshKey(prev => prev + 1);
-    
+
     }
 
     return (
@@ -17,7 +17,7 @@ function App() {
 
             <header className="app-header">
 
-                <h1>Alla Lån - HV Bibliotek <h3>________________</h3></h1>
+                <h1>Alla Lån - HV Bibliotek <h3>____________________</h3></h1>
 
                 <button className="refresh-btn" onClick={handleRefresh}>
                     Uppdatera
